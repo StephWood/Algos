@@ -1,0 +1,15 @@
+// given large array, return list of smaller arrays in chunks
+const chunkArr = (array) => {
+  const resultArr = [];
+  const chunk = 2;
+
+  let subArr = [];
+  subArr.push(array.slice(0, chunk));
+  resultArr.push(subArr);
+
+  return resultArr;
+};
+
+const myArray = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(chunkArr(myArray));

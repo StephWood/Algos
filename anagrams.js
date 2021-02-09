@@ -25,3 +25,5 @@ const anagrams2 = (word, words) => {
 console.log(anagrams2('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']));
 console.log(anagrams2('laser', ['lazing', 'lazy', 'lacer']));
 console.log(anagrams2('abba', ['aabb', 'acbd', 'baab']));
+
+for (let i = 0; i < 12; i++) {}

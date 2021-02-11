@@ -29,6 +29,19 @@ const numberJump = (array) => {
   return jumpAround(array);
 };
 
+const numberJump2 = (array) => {
+  let count = 0;
+  let i = 0;
+  while (i < array.length) {
+    if (array[i] === 0) return -1;
+    else {
+      count++;
+      i += array[i];
+    }
+  }
+  return count;
+};
+
 const sample = [3, 4, 1, 3, 5, 0, 2, 0, 1, 2, 3, 1];
 
-console.log(numberJump(sample));
+console.log(numberJump2(sample));

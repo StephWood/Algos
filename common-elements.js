@@ -1,8 +1,6 @@
 /*
 
-Write a function called commonElements that takes in any number of arrays in the 
-argument. The arrays may contain both numbers and strings. It should return a new array
-with all the common elements (both numbers and/or strings) from the given input. 
+Write a function called commonElements that takes in any number of arrays in the argument. The arrays may contain both numbers and strings. It should return a new array with all the common elements (both numbers and/or strings) from the given input. 
 If there are no common numbers/strings, return "Nothing in Common!"
 Assume there are no duplicates within the array.
 
@@ -25,6 +23,7 @@ const commonElements = (...args) => {
     for (let element of args[i]) {
       if (commonSet.has(element)) newCommonSet.add(element);
     }
+    console.log(commonSet, newCommonSet);
     // update commonSet to newCommonSet after each array of args is iterated through
     commonSet = newCommonSet;
   }
